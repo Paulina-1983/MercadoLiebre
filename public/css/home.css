@@ -2,6 +2,7 @@
     font-family:'Roboto', sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 li {
     list-style: none;
@@ -14,7 +15,7 @@ a{
 }
 
 header {
-    position: relative;
+    position: static;
     background-color: #EAC926;
     font-size: 12px;
     width: 100%;
@@ -78,6 +79,7 @@ header nav{
 }
 body{
     background-color:#ebebeb;
+    width: 100%;
 }
  main h2{
      font-size:24px;
@@ -94,13 +96,11 @@ main h4{
 
 .product{
     background-color: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin: 15px ;
    box-sizing: content-box;
    display: block;
    padding: 10px;
+  
 }
 
 footer {
@@ -128,4 +128,21 @@ footer p.copyright{
     padding-left: 15px;
     text-align: left;
     margin-bottom: 30px;
+}
+main{
+    width: 90%;
+   margin: auto;
+}
+.camion{
+    display: inline-block;
+   color: #39b54a;
+   font-size: 40px;
+   border-radius: 50%;
+   border: 1px solid #39b54a;
+   position: relative;
+   padding: 8px;
+}
+.caja{
+    border:#ebebeb 1px solid ;
+    padding: 15px;
 }
