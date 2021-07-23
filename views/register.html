@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercado Liebre</title>
+    <title>registro</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 </head>
 
-<body class="home">
+<body class="registro" >
     <header>
         <section class="logo-barrabusqueda-compra">
             <div class="logo"><img src="/images/logo-mercado-liebre.svg" alt="" width="100%"></div>
@@ -43,58 +43,67 @@
             <i class="fas fa-bars"></i>
         </div>
     </header>
+    <main class="form">
+        <h1>Registro de Usuario</h1>
+        <form action="/register" method="POST">
+            <section class="formulario">
+                <div>
+                    <input type="text" name="nombreyapellido" placeholder="Nombre y apellido">
+                </div>
+                <div>
+                    <input type="text" name="nombredeusuari@" placeholder="Nombre de usuario">
+                </div>
+                <div>
+                    <input type="email" name="E-mail" placeholder="E-mail">
+                </div>
+                <div>
+                    <input type="text" name="domicilio" placeholder="Domicilio">
+                </div>
+                <div>
+                    <p>Fecha de nacimiento</p>
+                    <input type="date" name="fecha">
+                </div>
+            </section>
+            <section class="checking">
+                <div>
+                    <p>Perfil del Usuario</p>
+                    <input type="radio" name="cv" value="c"> Comprador
+                    <input type="radio" name="cv" value="v"> Vendedor
+                </div>
+                <div>
+                    <p>Intereses</p>
+                    <input type="checkbox" name="electro" id="electro">
+                    <label for="electro">Electro</label><br>
+                    <input type="checkbox" name="moda" id="moda">
+                    <label for="moda">Moda</label><br>
+                    <input type="checkbox" name="hogar" id="hogar">
+                    <label for="hogar">Hogar</label><br>
+                    <input type="checkbox" name="jugueteria" id="jugueteria">
+                    <label for="jugueteria">Jugueteria</label><br>
+                    <input type="checkbox" name="vidasana" id="vidasana">
+                    <label for="vidasana">Vida sana</label>
+                </div>
+            </section>
 
-    <main>
-        <div class="banner"><img src="/images/img-home-banner.jpg" alt="" width="100%"></div>
-        <h2>Basado en tu última visita</h2>
-        <section class="container">
-            <article class="product">
-                <img src="/images/img-cafetera-moulinex.jpg" alt="" width="100%">
-                <div class="caja">
-                    <p class="camion"> <i class=" fas fa-truck "></i> </p>
-                    <div class="precio-desc">
-                        <h3 class="precio">$6770</h3>
-                        <p class="descuento">40%OFF</p>
-                    </div>
-                    <h4>Cafetera Moulinex</h4>
+            <div class="foto">
+                <p>Foto del usuario</p>
+                <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+            </div>
+            <section class="datos">
+                <div class="password">
+                    <input type="password" name="contrasena" placeholder="Contraseña">
                 </div>
-            </article>
-            <article class="product">
-                <img src="/images/img-macbook-pro-2019.jpg" alt="" width="100%">
-                <div class="caja">
-                    <p class="camion"> <i class=" fas fa-truck "></i> </p>
-                    <div class="precio-desc">
-                        <h3 class="precio">$230.000</h3>
-                        <p class="descuento">20%OFF</p>
-                    </div>
-                    <h4>MacBook Pro 2019</h4>
+                <div class="passrepeat">
+                    <input type="password" name="confirmarcontrasena" placeholder="Confimar contraseña">
                 </div>
-            </article>
-            <article class="product">
-                <img src="/images/img-samsung-galaxy-s10.jpg" alt="" width="100%">
-                <div class="caja">
-                    <p class="camion"> <i class=" fas fa-truck "></i> </p>
-                    <div class="precio-desc">
-                        <h3 class="precio">$70.500</h3>
-                        <p class="descuento">10%OFF</p>
-                    </div>
-                    <h4>Samsung Galaxy S10</h4>
-                </div>
-            </article>
-            <article class="product">
-                <img src="/images/img-tv-samsung-smart.jpg" alt="" width="100%">
-                <div class="caja">
-                    <p class="camion"> <i class=" fas fa-truck "></i> </p>
-                    <div class="precio-desc">
-                        <h3 class="precio">$23.200</h3>
-                        <p class="descuento">5%OFF</p>
-                    </div>
-                    <h4>SmartTv Samsung 43"</h4>
-                </div>
-            </article>
-        </section>
+            </section>
+            </section>
+            <div class="botones">
+                <button class="enviar" type="submit">Enviar</button>
+                <button class="reset" type="reset">Borrar</button>
+            </div>
+        </form>
     </main>
-
     <footer>
         <section>
             <i class="fas fa-credit-card"></i>
